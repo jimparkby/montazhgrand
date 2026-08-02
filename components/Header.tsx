@@ -46,11 +46,11 @@ export default function Header() {
               priority
             />
             <span className="heading-font leading-tight">
-              <span className="block text-base font-semibold tracking-wide text-white">
-                {t.company.shortName.toUpperCase()}
+              <span className="block text-base font-semibold text-white">
+                {t.company.shortName}
               </span>
-              <span className="block text-[11px] tracking-[0.2em] text-gold-300">
-                {t.company.name.toUpperCase()}
+              <span className="block text-[11px] text-gold-300">
+                {t.company.name}
               </span>
             </span>
           </Link>
@@ -65,7 +65,7 @@ export default function Header() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`heading-font px-3 py-2 text-[13px] font-semibold uppercase tracking-wide transition-colors ${
+                  className={`heading-font px-3 py-2 text-[13px] font-semibold transition-colors ${
                     active
                       ? "text-gold-400"
                       : "text-white/85 hover:text-gold-300"
@@ -108,7 +108,7 @@ export default function Header() {
                   key={item.href}
                   href={item.href}
                   onClick={() => setOpen(false)}
-                  className="heading-font py-3 text-sm font-semibold uppercase tracking-wide text-white/90 border-b border-white/5 last:border-0"
+                  className="heading-font py-3 text-sm font-semibold text-white/90 border-b border-white/5 last:border-0"
                 >
                   {item.label}
                 </Link>
@@ -146,7 +146,7 @@ function LangSwitch({
           key={code}
           type="button"
           onClick={() => setLang(code)}
-          className={`heading-font px-2 py-1 font-semibold uppercase tracking-wide transition-colors ${
+          className={`heading-font px-2 py-1 font-semibold transition-colors ${
             lang === code
               ? "bg-gold-500 text-navy-950"
               : "text-white/70 hover:text-gold-300"

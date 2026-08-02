@@ -24,7 +24,7 @@ export default function ContactsPage() {
         <div className="container-page grid gap-12 lg:grid-cols-3">
           <div className="space-y-8 lg:col-span-1">
             <div>
-              <h2 className="heading-font text-xs font-semibold uppercase tracking-[0.25em] text-gold-500">
+              <h2 className="heading-font text-xs font-semibold text-gold-500">
                 Юридический адрес
               </h2>
               <p className="mt-2 text-base text-navy-900">
@@ -32,7 +32,7 @@ export default function ContactsPage() {
               </p>
             </div>
             <div>
-              <h2 className="heading-font text-xs font-semibold uppercase tracking-[0.25em] text-gold-500">
+              <h2 className="heading-font text-xs font-semibold text-gold-500">
                 Почтовый адрес
               </h2>
               <p className="mt-2 text-base text-navy-900">
@@ -40,7 +40,7 @@ export default function ContactsPage() {
               </p>
             </div>
             <div>
-              <h2 className="heading-font text-xs font-semibold uppercase tracking-[0.25em] text-gold-500">
+              <h2 className="heading-font text-xs font-semibold text-gold-500">
                 Телефоны
               </h2>
               <ul className="mt-2 space-y-1">
@@ -57,7 +57,7 @@ export default function ContactsPage() {
               </ul>
             </div>
             <div>
-              <h2 className="heading-font text-xs font-semibold uppercase tracking-[0.25em] text-gold-500">
+              <h2 className="heading-font text-xs font-semibold text-gold-500">
                 Email
               </h2>
               <p className="mt-2">
@@ -87,7 +87,7 @@ export default function ContactsPage() {
       <section className="bg-bg-light py-16">
         <div className="container-page">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="heading-font text-2xl font-bold uppercase text-navy-900 sm:text-3xl">
+            <h2 className="heading-font text-2xl font-bold text-navy-900 sm:text-3xl">
               Напишите нам
             </h2>
             <p className="mt-3 text-base text-muted">

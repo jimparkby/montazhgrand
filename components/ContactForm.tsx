@@ -121,7 +121,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={status === "loading"}
-        className="heading-font rounded-md bg-gold-500 px-8 py-3 text-sm font-bold uppercase tracking-wide text-navy-950 transition-colors hover:bg-gold-400 disabled:cursor-not-allowed disabled:opacity-60"
+        className="heading-font rounded-md bg-gold-500 px-8 py-3 text-sm font-bold text-navy-950 transition-colors hover:bg-gold-400 disabled:cursor-not-allowed disabled:opacity-60"
       >
         {status === "loading" ? f.submitting : f.submit}
       </button>

@@ -21,7 +21,7 @@ export default function AboutView() {
         <div className="container-page grid gap-12 lg:grid-cols-3">
           <div className="lg:col-span-2 space-y-10">
             <div>
-              <h2 className="heading-font text-xl font-bold uppercase text-navy-900">
+              <h2 className="heading-font text-xl font-bold text-navy-900">
                 {a.missionTitle}
               </h2>
               <p className="mt-4 text-base leading-relaxed text-muted">
@@ -30,7 +30,7 @@ export default function AboutView() {
             </div>
 
             <div>
-              <h2 className="heading-font text-xl font-bold uppercase text-navy-900">
+              <h2 className="heading-font text-xl font-bold text-navy-900">
                 {a.activityTitle}
               </h2>
               <p className="mt-4 text-base leading-relaxed text-muted">

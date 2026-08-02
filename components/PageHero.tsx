@@ -27,11 +27,11 @@ export default function PageHero({
       <div className="relative z-10 flex h-full items-end">
         <div className="container-page pb-10">
           {eyebrow && (
-            <div className="heading-font text-xs font-semibold uppercase tracking-[0.25em] text-gold-400">
+            <div className="heading-font text-xs font-semibold text-gold-400">
               {eyebrow}
             </div>
           )}
-          <h1 className="heading-font mt-3 max-w-3xl text-3xl font-bold uppercase leading-tight text-white sm:text-4xl">
+          <h1 className="heading-font mt-3 max-w-3xl text-3xl font-bold leading-tight text-white sm:text-4xl">
             {title}
           </h1>
           {subtitle && (

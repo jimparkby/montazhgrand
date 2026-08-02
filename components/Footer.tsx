@@ -12,14 +12,14 @@ export default function Footer() {
       <div className="container-page grid gap-10 py-14 md:grid-cols-4">
         <div>
           <div className="heading-font text-lg font-semibold text-white">
-            {t.company.shortName.toUpperCase()}
+            {t.company.shortName}
           </div>
           <p className="mt-3 text-sm leading-relaxed">{t.ui.footer.about}</p>
           <p className="mt-4 text-xs text-gold-300">{t.company.iso}</p>
         </div>
 
         <div>
-          <div className="heading-font text-xs font-semibold uppercase tracking-widest text-white/50">
+          <div className="heading-font text-xs font-semibold text-white/50">
             {t.ui.footer.navTitle}
           </div>
           <ul className="mt-4 space-y-2 text-sm">
@@ -34,7 +34,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <div className="heading-font text-xs font-semibold uppercase tracking-widest text-white/50">
+          <div className="heading-font text-xs font-semibold text-white/50">
             {t.ui.footer.contactsTitle}
           </div>
           <ul className="mt-4 space-y-2 text-sm">
@@ -54,7 +54,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <div className="heading-font text-xs font-semibold uppercase tracking-widest text-white/50">
+          <div className="heading-font text-xs font-semibold text-white/50">
             {t.ui.footer.addressTitle}
           </div>
           <p className="mt-4 text-sm leading-relaxed">

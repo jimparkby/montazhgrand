@@ -29,10 +29,10 @@ export default function HomeView() {
         <div className="absolute inset-0 bg-gradient-to-b from-navy-950/80 via-navy-950/55 to-navy-950/95" />
 
         <div className="container-page relative z-10">
-          <div className="heading-font text-xs font-semibold uppercase tracking-[0.3em] text-gold-400">
+          <div className="heading-font text-xs font-semibold text-gold-400">
             {t.company.name}
           </div>
-          <h1 className="heading-font mt-4 max-w-3xl text-4xl font-bold uppercase leading-[1.1] text-white sm:text-5xl md:text-6xl">
+          <h1 className="heading-font mt-4 max-w-3xl text-4xl font-bold leading-[1.1] text-white sm:text-5xl md:text-6xl">
             {t.company.slogan}
           </h1>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg">
@@ -41,13 +41,13 @@ export default function HomeView() {
           <div className="mt-9 flex flex-wrap gap-4">
             <Link
               href="/services"
-              className="heading-font rounded-md bg-gold-500 px-7 py-3.5 text-sm font-bold uppercase tracking-wide text-navy-950 transition-colors hover:bg-gold-400"
+              className="heading-font rounded-md bg-gold-500 px-7 py-3.5 text-sm font-bold text-navy-950 transition-colors hover:bg-gold-400"
             >
               {h.heroCtaServices}
             </Link>
             <Link
               href="/contacts"
-              className="heading-font rounded-md border border-white/40 px-7 py-3.5 text-sm font-bold uppercase tracking-wide text-white transition-colors hover:border-gold-400 hover:text-gold-300"
+              className="heading-font rounded-md border border-white/40 px-7 py-3.5 text-sm font-bold text-white transition-colors hover:border-gold-400 hover:text-gold-300"
             >
               {h.heroCtaContacts}
             </Link>
@@ -73,10 +73,10 @@ export default function HomeView() {
       <section className="bg-bg-light py-20">
         <div className="container-page grid gap-12 md:grid-cols-2 md:items-center">
           <div>
-            <div className="heading-font text-xs font-semibold uppercase tracking-[0.25em] text-gold-500">
+            <div className="heading-font text-xs font-semibold text-gold-500">
               {h.aboutEyebrow}
             </div>
-            <h2 className="heading-font mt-3 text-2xl font-bold uppercase text-navy-900 sm:text-3xl">
+            <h2 className="heading-font mt-3 text-2xl font-bold text-navy-900 sm:text-3xl">
               {h.aboutTitle}
             </h2>
             <p className="mt-5 text-base leading-relaxed text-muted">{h.aboutP1}</p>
@@ -104,10 +104,10 @@ export default function HomeView() {
         <div className="container-page">
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div>
-              <div className="heading-font text-xs font-semibold uppercase tracking-[0.25em] text-gold-500">
+              <div className="heading-font text-xs font-semibold text-gold-500">
                 {h.servicesEyebrow}
               </div>
-              <h2 className="heading-font mt-3 text-2xl font-bold uppercase text-navy-900 sm:text-3xl">
+              <h2 className="heading-font mt-3 text-2xl font-bold text-navy-900 sm:text-3xl">
                 {h.servicesTitle}
               </h2>
             </div>
@@ -148,10 +148,10 @@ export default function HomeView() {
       <section className="relative overflow-hidden bg-navy-900 py-20">
         <div className="container-page relative z-10 grid gap-10 md:grid-cols-2 md:items-center">
           <div>
-            <div className="heading-font text-xs font-semibold uppercase tracking-[0.25em] text-gold-400">
+            <div className="heading-font text-xs font-semibold text-gold-400">
               {h.projectsEyebrow}
             </div>
-            <h2 className="heading-font mt-3 text-2xl font-bold uppercase text-white sm:text-3xl">
+            <h2 className="heading-font mt-3 text-2xl font-bold text-white sm:text-3xl">
               {h.projectsTitle}
             </h2>
             <p className="mt-5 text-base leading-relaxed text-white/70">
@@ -178,13 +178,13 @@ export default function HomeView() {
 
       <section className="bg-bg-light py-16">
         <div className="container-page flex flex-col items-center gap-5 text-center">
-          <h2 className="heading-font text-2xl font-bold uppercase text-navy-900 sm:text-3xl">
+          <h2 className="heading-font text-2xl font-bold text-navy-900 sm:text-3xl">
             {h.ctaTitle}
           </h2>
           <p className="max-w-xl text-base text-muted">{h.ctaText}</p>
           <Link
             href="/services#contact"
-            className="heading-font rounded-md bg-navy-900 px-8 py-3.5 text-sm font-bold uppercase tracking-wide text-white transition-colors hover:bg-navy-800"
+            className="heading-font rounded-md bg-navy-900 px-8 py-3.5 text-sm font-bold text-white transition-colors hover:bg-navy-800"
           >
             {h.ctaButton}
           </Link>

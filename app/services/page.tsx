@@ -39,10 +39,10 @@ export default function ServicesPage() {
                 </div>
               </div>
               <div>
-                <div className="heading-font text-xs font-semibold uppercase tracking-[0.25em] text-gold-500">
+                <div className="heading-font text-xs font-semibold text-gold-500">
                   Услуга {String(index + 1).padStart(2, "0")}
                 </div>
-                <h2 className="heading-font mt-3 text-2xl font-bold uppercase text-navy-900">
+                <h2 className="heading-font mt-3 text-2xl font-bold text-navy-900">
                   {service.title}
                 </h2>
                 <p className="mt-4 text-base leading-relaxed text-muted">
@@ -68,7 +68,7 @@ export default function ServicesPage() {
         </div>
         <div className="container-page relative z-10">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="heading-font text-2xl font-bold uppercase text-white sm:text-3xl">
+            <h2 className="heading-font text-2xl font-bold text-white sm:text-3xl">
               Готовы обсудить проект?
             </h2>
             <p className="mt-3 text-base text-white/70">

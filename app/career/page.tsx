@@ -18,7 +18,7 @@ export default function CareerPage() {
 
       <section className="bg-white py-16">
         <div className="container-page">
-          <h2 className="heading-font text-xl font-bold uppercase text-navy-900">
+          <h2 className="heading-font text-xl font-bold text-navy-900">
             Вакансии
           </h2>
 
