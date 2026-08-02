@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { shared, useLanguage } from "@/lib/i18n";
+import { useLanguage } from "@/lib/i18n";
 import HeroSlider from "@/components/HeroSlider";
 
 const heroImages = [
@@ -14,13 +14,6 @@ const heroImages = [
 export default function HomeView() {
   const { t } = useLanguage();
   const h = t.ui.home;
-
-  const stats: [string, string][] = [
-    [`${new Date().getFullYear() - shared.founded}+`, h.stats[0]],
-    [`${t.projects.length}+`, h.stats[1]],
-    ["ISO 9001", h.stats[2]],
-    ["3", h.stats[3]],
-  ];
 
   return (
     <>
@@ -52,21 +45,6 @@ export default function HomeView() {
               {h.heroCtaContacts}
             </Link>
           </div>
-        </div>
-      </section>
-
-      <section className="border-b border-line bg-white">
-        <div className="container-page grid grid-cols-2 gap-8 py-10 sm:grid-cols-4">
-          {stats.map(([value, label]) => (
-            <div key={label} className="text-center sm:text-left">
-              <div className="heading-font text-3xl font-bold text-navy-900 sm:text-4xl">
-                {value}
-              </div>
-              <div className="mt-1 text-xs leading-snug text-muted sm:text-sm">
-                {label}
-              </div>
-            </div>
-          ))}
         </div>
       </section>
 

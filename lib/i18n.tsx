@@ -68,7 +68,6 @@ export type Dictionary = {
     home: {
       heroCtaServices: string;
       heroCtaContacts: string;
-      stats: [string, string, string, string];
       aboutEyebrow: string;
       aboutTitle: string;
       aboutP1: string;
@@ -314,12 +313,6 @@ const ru: Dictionary = {
     home: {
       heroCtaServices: "Наши услуги",
       heroCtaContacts: "Связаться с нами",
-      stats: [
-        "лет на рынке монтажных работ",
-        "реализованных крупных объектов",
-        "система менеджмента качества",
-        "страны присутствия",
-      ],
       aboutEyebrow: "О компании",
       aboutTitle: "Надёжный партнёр в промышленном монтаже",
       aboutP1:
@@ -570,12 +563,6 @@ const en: Dictionary = {
     home: {
       heroCtaServices: "Our services",
       heroCtaContacts: "Get in touch",
-      stats: [
-        "years in installation works",
-        "major projects completed",
-        "quality management system",
-        "countries of operation",
-      ],
       aboutEyebrow: "About us",
       aboutTitle: "A reliable partner in industrial installation",
       aboutP1:
