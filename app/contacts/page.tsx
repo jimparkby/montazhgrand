@@ -24,7 +24,7 @@ export default function ContactsPage() {
         <div className="container-page grid gap-12 lg:grid-cols-3">
           <div className="space-y-8 lg:col-span-1">
             <div>
-              <h2 className="heading-font text-xs font-semibold text-gold-500">
+              <h2 className="heading-font text-xs font-semibold text-muted">
                 Юридический адрес
               </h2>
               <p className="mt-2 text-base text-navy-900">
@@ -32,7 +32,7 @@ export default function ContactsPage() {
               </p>
             </div>
             <div>
-              <h2 className="heading-font text-xs font-semibold text-gold-500">
+              <h2 className="heading-font text-xs font-semibold text-muted">
                 Почтовый адрес
               </h2>
               <p className="mt-2 text-base text-navy-900">
@@ -40,7 +40,7 @@ export default function ContactsPage() {
               </p>
             </div>
             <div>
-              <h2 className="heading-font text-xs font-semibold text-gold-500">
+              <h2 className="heading-font text-xs font-semibold text-muted">
                 Телефоны
               </h2>
               <ul className="mt-2 space-y-1">
@@ -48,7 +48,7 @@ export default function ContactsPage() {
                   <li key={phone}>
                     <a
                       href={`tel:${phone.replace(/[^\d+]/g, "")}`}
-                      className="text-base text-navy-900 hover:text-gold-500"
+                      className="text-base text-navy-900 hover:text-muted"
                     >
                       {phone}
                     </a>
@@ -57,13 +57,13 @@ export default function ContactsPage() {
               </ul>
             </div>
             <div>
-              <h2 className="heading-font text-xs font-semibold text-gold-500">
+              <h2 className="heading-font text-xs font-semibold text-muted">
                 Email
               </h2>
               <p className="mt-2">
                 <a
                   href={`mailto:${company.email}`}
-                  className="text-base text-navy-900 hover:text-gold-500"
+                  className="text-base text-navy-900 hover:text-muted"
                 >
                   {company.email}
                 </a>

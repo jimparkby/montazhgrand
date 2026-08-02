@@ -27,7 +27,7 @@ export default function PageHero({
       <div className="relative z-10 flex h-full items-end">
         <div className="container-page pb-10">
           {eyebrow && (
-            <div className="heading-font text-xs font-semibold text-gold-400">
+            <div className="heading-font text-xs font-semibold text-white/60">
               {eyebrow}
             </div>
           )}

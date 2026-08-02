@@ -3,6 +3,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { shared, useLanguage } from "@/lib/i18n";
+import HeroSlider from "@/components/HeroSlider";
+
+const heroImages = [
+  "/images/hero-refinery-night.jpg",
+  "/images/hero-slide-tanks.jpg",
+  "/images/hero-slide-towers.jpg",
+];
 
 export default function HomeView() {
   const { t } = useLanguage();
@@ -18,18 +25,11 @@ export default function HomeView() {
   return (
     <>
       <section className="relative flex h-[86vh] min-h-[560px] items-center overflow-hidden">
-        <Image
-          src="/images/hero-refinery-night.jpg"
-          alt=""
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover"
-        />
+        <HeroSlider images={heroImages} />
         <div className="absolute inset-0 bg-gradient-to-b from-navy-950/80 via-navy-950/55 to-navy-950/95" />
 
         <div className="container-page relative z-10">
-          <div className="heading-font text-xs font-semibold text-gold-400">
+          <div className="heading-font text-xs font-semibold text-white/60">
             {t.company.name}
           </div>
           <h1 className="heading-font mt-4 max-w-3xl text-4xl font-bold leading-[1.1] text-white sm:text-5xl md:text-6xl">
@@ -41,13 +41,13 @@ export default function HomeView() {
           <div className="mt-9 flex flex-wrap gap-4">
             <Link
               href="/services"
-              className="heading-font rounded-md bg-gold-500 px-7 py-3.5 text-sm font-bold text-navy-950 transition-colors hover:bg-gold-400"
+              className="heading-font rounded-md bg-white px-7 py-3.5 text-sm font-bold text-navy-950 transition-colors hover:bg-white/90"
             >
               {h.heroCtaServices}
             </Link>
             <Link
               href="/contacts"
-              className="heading-font rounded-md border border-white/40 px-7 py-3.5 text-sm font-bold text-white transition-colors hover:border-gold-400 hover:text-gold-300"
+              className="heading-font rounded-md border border-white/40 px-7 py-3.5 text-sm font-bold text-white transition-colors hover:border-white"
             >
               {h.heroCtaContacts}
             </Link>
@@ -73,7 +73,7 @@ export default function HomeView() {
       <section className="bg-bg-light py-20">
         <div className="container-page grid gap-12 md:grid-cols-2 md:items-center">
           <div>
-            <div className="heading-font text-xs font-semibold text-gold-500">
+            <div className="heading-font text-xs font-semibold text-muted">
               {h.aboutEyebrow}
             </div>
             <h2 className="heading-font mt-3 text-2xl font-bold text-navy-900 sm:text-3xl">
@@ -83,7 +83,7 @@ export default function HomeView() {
             <p className="mt-4 text-base leading-relaxed text-muted">{h.aboutP2}</p>
             <Link
               href="/about"
-              className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-navy-900 hover:text-gold-500"
+              className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-navy-900 hover:text-navy-600"
             >
               {h.aboutLink}
             </Link>
@@ -104,7 +104,7 @@ export default function HomeView() {
         <div className="container-page">
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div>
-              <div className="heading-font text-xs font-semibold text-gold-500">
+              <div className="heading-font text-xs font-semibold text-muted">
                 {h.servicesEyebrow}
               </div>
               <h2 className="heading-font mt-3 text-2xl font-bold text-navy-900 sm:text-3xl">
@@ -113,7 +113,7 @@ export default function HomeView() {
             </div>
             <Link
               href="/services"
-              className="text-sm font-semibold text-navy-900 hover:text-gold-500"
+              className="text-sm font-semibold text-navy-900 hover:text-navy-600"
             >
               {h.servicesAll}
             </Link>
@@ -148,7 +148,7 @@ export default function HomeView() {
       <section className="relative overflow-hidden bg-navy-900 py-20">
         <div className="container-page relative z-10 grid gap-10 md:grid-cols-2 md:items-center">
           <div>
-            <div className="heading-font text-xs font-semibold text-gold-400">
+            <div className="heading-font text-xs font-semibold text-white/60">
               {h.projectsEyebrow}
             </div>
             <h2 className="heading-font mt-3 text-2xl font-bold text-white sm:text-3xl">
@@ -159,7 +159,7 @@ export default function HomeView() {
             </p>
             <Link
               href="/projects"
-              className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-gold-400 hover:text-gold-300"
+              className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-white hover:text-white/70"
             >
               {h.projectsLink}
             </Link>

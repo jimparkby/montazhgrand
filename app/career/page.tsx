@@ -58,7 +58,7 @@ export default function CareerPage() {
                     href={vacancy.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block font-semibold text-navy-900 hover:text-gold-500"
+                    className="block font-semibold text-navy-900 hover:text-navy-600"
                   >
                     Вакансия на gsz.gov.by →
                   </a>

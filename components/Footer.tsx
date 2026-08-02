@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { shared, useLanguage } from "@/lib/i18n";
-import { photoCredits } from "@/lib/content";
 
 export default function Footer() {
   const { t } = useLanguage();
@@ -15,7 +14,7 @@ export default function Footer() {
             {t.company.shortName}
           </div>
           <p className="mt-3 text-sm leading-relaxed">{t.ui.footer.about}</p>
-          <p className="mt-4 text-xs text-gold-300">{t.company.iso}</p>
+          <p className="mt-4 text-xs text-white/50">{t.company.iso}</p>
         </div>
 
         <div>
@@ -25,7 +24,7 @@ export default function Footer() {
           <ul className="mt-4 space-y-2 text-sm">
             {t.nav.map((item) => (
               <li key={item.href}>
-                <Link href={item.href} className="hover:text-gold-300 transition-colors">
+                <Link href={item.href} className="hover:text-white transition-colors">
                   {item.label}
                 </Link>
               </li>
@@ -40,13 +39,13 @@ export default function Footer() {
           <ul className="mt-4 space-y-2 text-sm">
             {shared.phones.map((phone) => (
               <li key={phone}>
-                <a href={`tel:${phone.replace(/[^\d+]/g, "")}`} className="hover:text-gold-300 transition-colors">
+                <a href={`tel:${phone.replace(/[^\d+]/g, "")}`} className="hover:text-white transition-colors">
                   {phone}
                 </a>
               </li>
             ))}
             <li>
-              <a href={`mailto:${shared.email}`} className="hover:text-gold-300 transition-colors">
+              <a href={`mailto:${shared.email}`} className="hover:text-white transition-colors">
                 {shared.email}
               </a>
             </li>
@@ -71,18 +70,9 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-white/10">
-        <div className="container-page flex flex-col gap-2 py-5 text-xs text-white/40 md:flex-row md:items-center md:justify-between">
+        <div className="container-page py-5 text-xs text-white/40">
           <span>
             © {new Date().getFullYear()} {t.company.name}. {t.ui.footer.rights}
-          </span>
-          <span className="max-w-2xl md:text-right">
-            {t.ui.footer.photoCredits}{" "}
-            {photoCredits.map((c, i) => (
-              <span key={c.file}>
-                {c.text}
-                {i < photoCredits.length - 1 ? "; " : "."}
-              </span>
-            ))}
           </span>
         </div>
       </div>

@@ -34,7 +34,7 @@ export default function ProjectsPage() {
                 key={project.title}
                 className="flex flex-col gap-4 rounded-lg border border-line p-6 sm:flex-row sm:items-start sm:gap-6"
               >
-                <div className="heading-font shrink-0 text-2xl font-bold text-gold-500">
+                <div className="heading-font shrink-0 text-2xl font-bold text-muted">
                   {String(index + 1).padStart(2, "0")}
                 </div>
                 <div>

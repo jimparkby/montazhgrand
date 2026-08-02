@@ -64,7 +64,6 @@ export type Dictionary = {
       mailAddressLabel: string;
       isoLine: string;
       rights: string;
-      photoCredits: string;
     };
     home: {
       heroCtaServices: string;
@@ -311,7 +310,6 @@ const ru: Dictionary = {
       mailAddressLabel: "Почтовый адрес:",
       isoLine: "Система менеджмента качества СТБ ISO 9001-2015",
       rights: "Все права защищены.",
-      photoCredits: "Фото на сайте: Wikimedia Commons —",
     },
     home: {
       heroCtaServices: "Наши услуги",
@@ -568,7 +566,6 @@ const en: Dictionary = {
       mailAddressLabel: "Mailing address:",
       isoLine: "Quality management system STB ISO 9001-2015",
       rights: "All rights reserved.",
-      photoCredits: "Photos: Wikimedia Commons —",
     },
     home: {
       heroCtaServices: "Our services",

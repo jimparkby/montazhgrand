@@ -19,14 +19,14 @@ export default function Header() {
             <a
               key={phone}
               href={`tel:${phone.replace(/[^\d+]/g, "")}`}
-              className="hover:text-gold-300 transition-colors"
+              className="hover:text-white transition-colors"
             >
               {phone}
             </a>
           ))}
           <a
             href={`mailto:${shared.email}`}
-            className="hover:text-gold-300 transition-colors"
+            className="hover:text-white transition-colors"
           >
             {shared.email}
           </a>
@@ -49,7 +49,7 @@ export default function Header() {
               <span className="block text-base font-semibold text-white">
                 {t.company.shortName}
               </span>
-              <span className="block text-[11px] text-gold-300">
+              <span className="block text-[11px] text-white/60">
                 {t.company.name}
               </span>
             </span>
@@ -65,10 +65,10 @@ export default function Header() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`heading-font px-3 py-2 text-[13px] font-semibold transition-colors ${
+                  className={`heading-font px-3 py-2 text-[13px] font-semibold underline-offset-4 transition-colors ${
                     active
-                      ? "text-gold-400"
-                      : "text-white/85 hover:text-gold-300"
+                      ? "text-white underline"
+                      : "text-white/85 hover:text-white"
                   }`}
                 >
                   {item.label}
@@ -148,8 +148,8 @@ function LangSwitch({
           onClick={() => setLang(code)}
           className={`heading-font px-2 py-1 font-semibold transition-colors ${
             lang === code
-              ? "bg-gold-500 text-navy-950"
-              : "text-white/70 hover:text-gold-300"
+              ? "bg-white text-navy-900"
+              : "text-white/70 hover:text-white"
           }`}
         >
           {code}

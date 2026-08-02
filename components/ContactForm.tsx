@@ -45,15 +45,15 @@ export default function ContactForm() {
 
   if (status === "success") {
     return (
-      <div className="rounded-md border border-gold-400/40 bg-white/5 p-8 text-center">
-        <p className="heading-font text-lg font-semibold text-gold-300">
+      <div className="rounded-md border border-white/20 bg-white/5 p-8 text-center">
+        <p className="heading-font text-lg font-semibold text-white">
           {f.successTitle}
         </p>
         <p className="mt-2 text-sm text-white/70">{f.successText}</p>
         <button
           type="button"
           onClick={() => setStatus("idle")}
-          className="mt-5 text-sm font-semibold text-gold-400 underline underline-offset-4 hover:text-gold-300"
+          className="mt-5 text-sm font-semibold text-white underline underline-offset-4 hover:text-white/80"
         >
           {f.sendAnother}
         </button>
@@ -68,13 +68,13 @@ export default function ContactForm() {
           required
           name="firstName"
           placeholder={f.firstName}
-          className="w-full rounded-md border border-white/20 bg-white/5 px-4 py-3 text-sm text-white placeholder-white/45 outline-none focus:border-gold-400"
+          className="w-full rounded-md border border-white/20 bg-white/5 px-4 py-3 text-sm text-white placeholder-white/45 outline-none focus:border-white/60"
         />
         <input
           required
           name="lastName"
           placeholder={f.lastName}
-          className="w-full rounded-md border border-white/20 bg-white/5 px-4 py-3 text-sm text-white placeholder-white/45 outline-none focus:border-gold-400"
+          className="w-full rounded-md border border-white/20 bg-white/5 px-4 py-3 text-sm text-white placeholder-white/45 outline-none focus:border-white/60"
         />
       </div>
       <div className="grid gap-4 sm:grid-cols-2">
@@ -83,23 +83,23 @@ export default function ContactForm() {
           type="email"
           name="email"
           placeholder={f.email}
-          className="w-full rounded-md border border-white/20 bg-white/5 px-4 py-3 text-sm text-white placeholder-white/45 outline-none focus:border-gold-400"
+          className="w-full rounded-md border border-white/20 bg-white/5 px-4 py-3 text-sm text-white placeholder-white/45 outline-none focus:border-white/60"
         />
         <input
           name="subject"
           placeholder={f.subject}
-          className="w-full rounded-md border border-white/20 bg-white/5 px-4 py-3 text-sm text-white placeholder-white/45 outline-none focus:border-gold-400"
+          className="w-full rounded-md border border-white/20 bg-white/5 px-4 py-3 text-sm text-white placeholder-white/45 outline-none focus:border-white/60"
         />
       </div>
       <textarea
         name="message"
         placeholder={f.message}
         rows={6}
-        className="w-full resize-none rounded-md border border-white/20 bg-white/5 px-4 py-3 text-sm text-white placeholder-white/45 outline-none focus:border-gold-400"
+        className="w-full resize-none rounded-md border border-white/20 bg-white/5 px-4 py-3 text-sm text-white placeholder-white/45 outline-none focus:border-white/60"
       />
 
       <div className="flex flex-wrap items-center gap-4">
-        <label className="inline-flex cursor-pointer items-center gap-2 rounded-md border border-white/25 px-4 py-2.5 text-sm text-white/85 hover:border-gold-400 hover:text-gold-300">
+        <label className="inline-flex cursor-pointer items-center gap-2 rounded-md border border-white/25 px-4 py-2.5 text-sm text-white/85 hover:border-white hover:text-white">
           <span aria-hidden>📎</span>
           {f.attach}
           <input
@@ -121,7 +121,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={status === "loading"}
-        className="heading-font rounded-md bg-gold-500 px-8 py-3 text-sm font-bold text-navy-950 transition-colors hover:bg-gold-400 disabled:cursor-not-allowed disabled:opacity-60"
+        className="heading-font rounded-md bg-white px-8 py-3 text-sm font-bold text-navy-950 transition-colors hover:bg-white/90 disabled:cursor-not-allowed disabled:opacity-60"
       >
         {status === "loading" ? f.submitting : f.submit}
       </button>

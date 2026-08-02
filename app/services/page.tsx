@@ -39,7 +39,7 @@ export default function ServicesPage() {
                 </div>
               </div>
               <div>
-                <div className="heading-font text-xs font-semibold text-gold-500">
+                <div className="heading-font text-xs font-semibold text-muted">
                   Услуга {String(index + 1).padStart(2, "0")}
                 </div>
                 <h2 className="heading-font mt-3 text-2xl font-bold text-navy-900">
@@ -83,7 +83,7 @@ export default function ServicesPage() {
             Или напишите напрямую:{" "}
             <Link
               href={`mailto:${company.email}`}
-              className="text-gold-400 hover:text-gold-300"
+              className="text-white hover:text-white/80"
             >
               {company.email}
             </Link>

@@ -6,9 +6,6 @@
   --color-navy-800: #102a4c;
   --color-navy-700: #163a68;
   --color-navy-600: #1d4a86;
-  --color-gold-500: #c9982f;
-  --color-gold-400: #d9ae4e;
-  --color-gold-300: #e6c576;
   --color-ink: #16202e;
   --color-muted: #55606f;
   --color-bg-light: #f4f6f9;
@@ -21,9 +18,6 @@
   --color-navy-800: var(--color-navy-800);
   --color-navy-700: var(--color-navy-700);
   --color-navy-600: var(--color-navy-600);
-  --color-gold-500: var(--color-gold-500);
-  --color-gold-400: var(--color-gold-400);
-  --color-gold-300: var(--color-gold-300);
   --color-ink: var(--color-ink);
   --color-muted: var(--color-muted);
   --color-bg-light: var(--color-bg-light);
