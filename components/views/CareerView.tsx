@@ -13,7 +13,7 @@ export default function CareerView() {
         eyebrow={c.eyebrow}
         title={c.title}
         subtitle={c.subtitle}
-        image="/images/welding.jpg"
+        image="/images/hero-slide-towers.jpg"
       />
 
       <section className="bg-white py-16">
