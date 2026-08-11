@@ -13,27 +13,6 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50">
-      <div className="hidden bg-navy-950 text-xs text-white/70 md:block">
-        <div className="container-page flex items-center justify-end gap-6 py-2">
-          {shared.phones.map((phone) => (
-            <a
-              key={phone}
-              href={`tel:${phone.replace(/[^\d+]/g, "")}`}
-              className="hover:text-white transition-colors"
-            >
-              {phone}
-            </a>
-          ))}
-          <a
-            href={`mailto:${shared.email}`}
-            className="hover:text-white transition-colors"
-          >
-            {shared.email}
-          </a>
-          <LangSwitch lang={lang} setLang={setLang} />
-        </div>
-      </div>
-
       <div className="bg-navy-900/98 backdrop-blur supports-[backdrop-filter]:bg-navy-900/95 border-b border-white/10">
         <div className="container-page flex items-center justify-between py-3">
           <Link href="/" className="flex items-center gap-3 shrink-0">
@@ -78,9 +57,7 @@ export default function Header() {
           </nav>
 
           <div className="flex items-center gap-3">
-            <div className="md:hidden">
-              <LangSwitch lang={lang} setLang={setLang} compact />
-            </div>
+            <LangSwitch lang={lang} setLang={setLang} />
             <button
               type="button"
               onClick={() => setOpen((v) => !v)}
