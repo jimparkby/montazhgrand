@@ -155,7 +155,7 @@ export type Dictionary = {
 };
 
 const ruServicesMeta = [
-  { slug: "montazh-oborudovaniya", image: "/images/welding.jpg" },
+  { slug: "montazh-oborudovaniya", image: "/images/hero-refinery-night.jpg" },
   { slug: "montazh-truboprovodov", image: "/images/pipe-rack.jpg" },
   { slug: "metallokonstruktsii", image: "/images/steel-structures.jpg" },
   {

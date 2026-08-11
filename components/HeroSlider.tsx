@@ -46,7 +46,7 @@ export default function HeroSlider({
             <button
               key={src}
               type="button"
-              aria-label={`Слайд ${i + 1}`}
+              aria-label={`Slide ${i + 1}`}
               onClick={() => setActive(i)}
               className={`h-2 w-2 rounded-full transition-colors ${
                 i === active ? "bg-white" : "bg-white/40 hover:bg-white/70"

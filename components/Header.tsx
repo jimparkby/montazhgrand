@@ -18,7 +18,7 @@ export default function Header() {
           <Link href="/" className="flex items-center gap-3 shrink-0">
             <Image
               src="/images/logo-mark.jpeg"
-              alt="Монтажгранд"
+              alt={t.company.shortName}
               width={44}
               height={44}
               className="rounded-sm"
