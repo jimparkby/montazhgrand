@@ -150,6 +150,7 @@ export type Dictionary = {
       successText: string;
       sendAnother: string;
       errorDefault: string;
+      rateLimited: string;
     };
   };
 };
@@ -409,6 +410,7 @@ const ru: Dictionary = {
       successText: "Спасибо! Мы свяжемся с вами в ближайшее время.",
       sendAnother: "Отправить ещё одну заявку",
       errorDefault: "Не удалось отправить заявку",
+      rateLimited: "Слишком много заявок. Попробуйте позже.",
     },
   },
 };
@@ -658,6 +660,7 @@ const en: Dictionary = {
       successText: "Thank you! We'll get back to you shortly.",
       sendAnother: "Send another request",
       errorDefault: "Failed to send the request",
+      rateLimited: "Too many requests. Please try again later.",
     },
   },
 };
