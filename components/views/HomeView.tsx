@@ -25,9 +25,6 @@ export default function HomeView() {
           <div className="heading-font text-xs font-semibold text-white/60">
             {t.company.name}
           </div>
-          <h1 className="heading-font mt-4 max-w-3xl text-4xl font-bold leading-[1.1] text-white sm:text-5xl md:text-6xl">
-            {t.company.slogan}
-          </h1>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg">
             {t.company.sloganSub}
           </p>
